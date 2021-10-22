@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MedicineStock.Migrations
 {
-    public partial class stock : Migration
+    public partial class s1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

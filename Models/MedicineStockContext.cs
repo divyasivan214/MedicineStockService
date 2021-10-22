@@ -19,7 +19,7 @@ namespace MedicineStock
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-NI5UBAVP\\SQLEXPRESS;Initial Catalog=StockDataBase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                optionsBuilder.UseSqlServer("Server=tcp:stockserver1234.database.windows.net,1433;Initial Catalog=stockdb;Persist Security Info=False;User ID=divya214;Password=Divya@214;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
